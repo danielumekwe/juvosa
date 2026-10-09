@@ -1,4 +1,4 @@
-import ContactForm from "@/components/contact-form";
+import ContactForm from "@/components/original/contact-form";
 
 const contactDetails = [
   { icon: "⌖", title: "Office Address", content: <>16 Ikosi Road Oregun,<br />Lagos, Nigeria</> },

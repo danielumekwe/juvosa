@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
+      disallow: "/original",
     },
     sitemap: "https://juvosaltd.com/sitemap.xml",
   };

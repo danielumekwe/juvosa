@@ -1,18 +1,13 @@
-import type { Metadata } from "next";
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
-import Header from "@/components/header";
-import Hero from "@/components/hero";
-import Portfolio from "@/components/portfolio";
-import Services from "@/components/services";
-import WhyChooseUs from "@/components/why-choose-us";
+import About from "@/components/original/about";
+import Contact from "@/components/original/contact";
+import Footer from "@/components/original/footer";
+import Header from "@/components/original/header";
+import Hero from "@/components/original/hero";
+import Portfolio from "@/components/original/portfolio";
+import Services from "@/components/original/services";
+import WhyChooseUs from "@/components/original/why-choose-us";
 
-export const metadata: Metadata = {
-  title: "Juvosa Limited – Expanding our frontiers to international exposure",
-};
-
-export default function HomePage() {
+export default function OriginalHomePage() {
   return (
     <>
       <Header />

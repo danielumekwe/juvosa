@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BackToTop from "@/components/back-to-top";
+import BackToTop from "@/components/original/back-to-top";
 
 const latestPosts = [
   { title: "Hello world!", date: "March 14, 2021", image: "/images/latest-post-01.jpg" },

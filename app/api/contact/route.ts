@@ -6,14 +6,16 @@ type ContactFields = {
   phone: string;
   message: string;
   website: string;
+  interest?: string;
 };
 
 function isContactFields(value: unknown): value is ContactFields {
   if (!value || typeof value !== "object") return false;
 
   const fields = value as Record<string, unknown>;
-  return ["name", "email", "phone", "message", "website"].every(
-    (field) => typeof fields[field] === "string",
+  return (
+    ["name", "email", "phone", "message", "website"].every((field) => typeof fields[field] === "string") &&
+    (fields.interest === undefined || typeof fields.interest === "string")
   );
 }
 
@@ -34,6 +36,7 @@ export async function POST(request: Request) {
   const email = payload.email.trim();
   const phone = payload.phone.trim();
   const message = payload.message.trim();
+  const interest = payload.interest?.trim() ?? "";
 
   if (
     payload.website.trim() ||
@@ -44,7 +47,8 @@ export async function POST(request: Request) {
     !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) ||
     !phone ||
     phone.length > 50 ||
-    message.length > 5000
+    message.length > 5000 ||
+    interest.length > 100
   ) {
     return NextResponse.json({ error: "Please check the details you entered and try again." }, { status: 400 });
   }
@@ -73,7 +77,7 @@ export async function POST(request: Request) {
         to: [recipient],
         reply_to: email,
         subject: `Website enquiry from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message || "(no message provided)"}`,
+        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nArea of interest: ${interest || "(not specified)"}\n\nMessage:\n${message || "(no message provided)"}`,
       }),
     });
   } catch {
