@@ -11,8 +11,8 @@ const otherServices = [
   {
     title: "Interior décor and design",
     description: "Residential interior design, office décor, and hospitality design and finishing.",
-    image: "/images/redesign/interior-living-room.jpg",
-    alt: "Warm, modern living room with a grey sofa, leather ottomans and large windows",
+    image: "/images/redesign/interior-bright-living.jpg",
+    alt: "Bright living room with cream sofas, a stone coffee table and tall windows",
   },
   {
     title: "Fashion",
@@ -48,8 +48,8 @@ export default function Services() {
         <article className="mt-14 grid overflow-hidden bg-paper sm:mt-20 lg:grid-cols-12">
           <div className="relative aspect-[16/10] lg:col-span-7 lg:aspect-auto lg:min-h-[34rem]">
             <Image
-              src="/images/redesign/lagos-skyline.jpg"
-              alt="Lagos skyline with residential towers, homes and the Atlantic Ocean beyond"
+              src="/images/redesign/lagos-civic-aerial.jpg"
+              alt="Aerial view of Lagos with towers, waterfront and a busy expressway"
               fill
               sizes="(max-width: 1023px) 100vw, 58vw"
               className="object-cover"

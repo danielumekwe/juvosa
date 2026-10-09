@@ -19,6 +19,16 @@
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
 
   --animate-rise: rise 900ms var(--ease-out-soft) both;
+  --animate-progress: progress 7000ms linear both;
+
+  @keyframes progress {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
 
   @keyframes rise {
     from {

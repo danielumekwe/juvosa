@@ -11,9 +11,11 @@ The Juvosa logo and the architectural renders (`public/images/project-*.jpg`) ar
 | File | Photographer | Source |
 | --- | --- | --- |
 | `lagos-lagoon-aerial*.jpg` | Malik Buraimoh | https://unsplash.com/photos/EMjpo0YjHPw |
+| `hero-lagos-skyline*.jpg` | Onaopemipo Oladipupo | https://unsplash.com/photos/20o-8pav22k |
+| `hero-interior*.jpg` | Spacejoy | https://unsplash.com/photos/9M66C_w_ToM |
+| `lagos-civic-aerial.jpg` | Nupo Deyon Daniel | https://unsplash.com/photos/67ruAEYmp4c |
+| `interior-bright-living.jpg` | Spacejoy | https://unsplash.com/photos/x3mSC1WnWhc |
 | `lagos-facade.jpg` | Hammed Okunade | https://unsplash.com/photos/ePtmY4Xh6DI |
-| `lagos-skyline.jpg` | Onaopemipo Oladipupo | https://unsplash.com/photos/20o-8pav22k |
-| `interior-living-room.jpg` | Spacejoy | https://unsplash.com/photos/9M66C_w_ToM |
 | `fashion-boutique.jpg` | Clark Street Mercantile | https://unsplash.com/photos/qnKhZJPKFD8 |
 | `excavator-dusk.jpg` | Built Robotics | https://unsplash.com/photos/zmW-UG2OX_M |
 
